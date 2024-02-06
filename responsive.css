@@ -242,7 +242,7 @@ img {
     
 }
 
-.grid-layout:hover > .grid-image-container:not(.grid-image-container:hover)  {
+.grid-layout:hover {
     opacity: 0.4;
 }
 
@@ -255,6 +255,8 @@ img {
 }
 
 
+/* responsiveness */
+
 /* MOBILE VIEW */
 
 @media (width < 480px) {
@@ -263,40 +265,8 @@ img {
         width: 100%;
     }
     
-    /* .grid-image-container {
-        flex: 0 0 auto;
-        width: 85%;
-        scroll-snap-align: start;
-        
-        padding-inline: 1rem;
-    }
-    
-    .grid-layout {
-        display: flex;
-        gap: 0;
-        scroll-snap-type: x mandatory;
-        overflow-x: scroll;
-        width: 100%;
-    }*/
-    
-    /* .primary-navigation {
-        display: none;
-    } 
-
-    .footer-container {
-        display: block;
-    }
-
-    .footer-social {
-        align-items:  start;
-    }
-
-    .footer-bottom {
-        padding-inline: 2rem;
-        display: block;
-    } */
-
-    /* .green-bg {
-        clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-    } */
 }
+
+
+/* TABLET VIEW */
+
