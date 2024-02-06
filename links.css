@@ -1,0 +1,139 @@
+
+:root {
+   --clr-cta: #12f1ab;
+   --clr-copy: hsl(0, 0%, 23%);
+   --clr-cta-active: #15b884;
+}
+
+
+/* link styling */
+
+.btn-cta {
+    all: unset;
+
+    position: relative;
+    display: inline-block;
+
+    outline: initial;
+    
+    font-family: inherit; 
+    font-weight: 600;
+    color: black;
+    background-color: var(--clr-cta-active);
+    
+    text-align: center;
+    
+    box-shadow: 0 3px 6px hsl(162, 95%, 7%);
+    border-radius: 4px;
+    
+    padding-inline: 1.5rem;
+    padding-block: 0.75rem;
+    overflow:hidden;
+    
+    cursor: pointer;
+    
+    transition: color 250ms ease-in-out,
+    box-shadow 100ms;
+    
+    isolation: isolate;
+ }
+ 
+ 
+ .btn-cta::after {
+    content: '';
+    position: absolute;
+    opacity: 0;
+    background: var(--clr-cta);
+    inset: 0;
+    overflow: hidden;
+    transform: translateY(-100%);
+    
+    transition: transform 200ms ease-in-out,
+                opacity 150ms ease-in-out;
+    z-index: -1;
+ }
+ 
+ .btn-cta:focus::after,
+ .btn-cta:hover::after {
+    opacity: 1;
+    transform: translateY(0%);
+ 
+ }
+
+ .btn-cta:hover,
+ .btn-cta:focus {
+    color: var(--clr-copy);
+ } 
+ 
+ .btn-cta:focus {
+    outline: 1px solid white;
+ }
+ 
+ .btn-cta:active {
+    box-shadow: none;
+    outline: none;
+ }
+ 
+ .btn-cta:active::after {
+    filter: grayscale();
+ }
+
+
+.nav-link,
+.nav-link:visited {
+    color: black;
+    font-weight: 600;
+    
+    text-underline-offset: 2em;
+    text-decoration-color: transparent;
+    transition: text-decoration-color 250ms ease-in-out,
+                text-underline-offset 250ms ease-in-out,
+                color 250ms ease-in-out;
+    
+}
+
+.nav-link:hover,
+.nav-link:focus {
+    color: rgb(30, 190, 108);
+}
+
+.nav-link:hover,
+.nav-link.selected {
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
+    text-decoration-color: rgb(102, 195, 144);
+    text-decoration-thickness: 0.17em;
+} 
+
+.nav-link:active {
+   color: black;
+   text-decoration-color: black;
+}  
+
+
+.footer-link,
+.footer-link:visited {
+    color: rgb(179, 179, 179);
+    text-underline-offset: 0.17em; 
+    text-decoration-color: rgb(84, 84, 84);
+}
+
+.footer-link:hover,
+.footer-link.selected  {
+    text-decoration-color: white;
+}
+
+.footer-link:hover {
+    color: white;
+}
+
+.footer-link:active {
+    color: gray;
+}
+
+
+/* buttons */
+
+.hamburger-button {
+   display: none;
+}
