@@ -81,7 +81,7 @@ header {
     list-style: none;
 }
 
-.grid-layout {
+.card-layout {
     display: grid;
     
     grid-template-columns: repeat(4, 1fr);
@@ -228,13 +228,24 @@ img {
     border-radius: 1rem;
 }
 
-.grid-image-container {
+.main-logo {
+    width: 32px;
+}
+
+.logo {
+    width: 32px;
+}
+
+
+/* cards */ 
+
+.card-image-container {
     overflow: hidden;
     border-radius: 1rem;
     transition: opacity 250ms ease-in-out;
 }
 
-.grid-image {
+.card-image {
     aspect-ratio: 4/5;
     object-fit: cover;
     transition: scale 1250ms ease-in-out;
@@ -242,16 +253,9 @@ img {
     
 }
 
-.grid-layout:hover {
+/* FIXME: Jag vill att bara den man hovrar över ska vara tydlig resten ska vara halvgenomskinliga */
+.card-layout:hover {
     opacity: 0.4;
-}
-
-.main-logo {
-    width: 32px;
-}
-
-.logo {
-    width: 32px;
 }
 
 
