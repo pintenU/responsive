@@ -248,9 +248,7 @@ img {
 .card-image {
     aspect-ratio: 4/5;
     object-fit: cover;
-    transition: scale 1250ms ease-in-out;
     cursor: pointer;
-    
 }
 
 /* FIXME: Jag vill att bara den man hovrar över ska vara tydlig resten ska vara halvgenomskinliga */
@@ -265,7 +263,7 @@ img {
 
 @media (width < 480px) {
 
-    main {
+    .margins {
         width: 100%;
     }
     
