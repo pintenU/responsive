@@ -134,6 +134,9 @@
 
 /* buttons */
 
+
 .hamburger-button {
-   display: none;
-}
+   all: unset;
+   display: grid;
+   place-items: center;
+} 
