@@ -267,7 +267,7 @@ img {
 @media (width < 480px) {
 
     .margins {
-        width: 100%;
+        /* FIXME: ändra så det blir mindre marginaler med width här prova 90% ? */
     }
     
 }
