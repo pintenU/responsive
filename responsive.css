@@ -56,6 +56,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
+    /* FIXME: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler (OBS! ta inte bort här för den ska finnas när man kör vanlig skärm) */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     overflow: hidden;
 
@@ -108,6 +109,7 @@ header {
 .green-bg {
     background:  rgb(220, 255, 228);
 
+    /* FIXME: välj om du vill fixa clip-path så det passar för mobil i en media-query eller om du vill ta bort effekten helt på mobiler (OBS! ta inte bort här för den ska finnas när man kör vanlig skärm) */
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
 }
 
@@ -217,6 +219,8 @@ footer ul {
 
 .columns {
     columns: 3;
+    /* TODO: det går inte att ha tre kolumner i mobil. försök lösa problemet för både mobil och padda */
+
     column-gap: 3rem;
     column-rule: 1px solid rgb(207, 207, 207);
 }
@@ -261,7 +265,7 @@ img {
     cursor: pointer;
 }
 
-/* TODO: Jag vill att alla utom den man hovrar över ska vara halvgenomskinliga - animationen, transition, måste också fungera */
+/* TODO: ÖVERKURS: Jag vill att alla utom den man hovrar över ska vara halvgenomskinliga - animationen, transition, måste också fungera */
 .card-layout:hover {
     opacity: 0.4;
 }
@@ -282,3 +286,10 @@ img {
 
 /* TABLET VIEW */
 
+@media (width > 480px) and (width < 860px) {
+    
+    .margins {
+        width: 80%;
+    }
+
+}
