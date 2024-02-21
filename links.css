@@ -1,4 +1,12 @@
 
+/* LINKS.CSS ***************************************
+
+Detta CSS-dokument innehåller alla egenskaper för
+länkar och knappar.
+
+****************************************************/
+
+
 :root {
    --clr-cta: #12f1ab;
    --clr-copy: hsl(0, 0%, 23%);
