@@ -87,6 +87,8 @@ länkar och knappar.
  }
 
 
+/* TODO: ÖVERKURS: Gör en egen animation/effekt för nav-link */
+
 .nav-link,
 .nav-link:visited {
     color: black;
