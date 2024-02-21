@@ -278,7 +278,6 @@ img {
 
     .margins {
         /* FIXME: ändra så det blir mindre marginaler med width här */
-        width: 90%;
     }
 
 }
@@ -286,7 +285,7 @@ img {
 
 /* TABLET VIEW */
 
-@media (width > 480px) and (width < 860px) {
+/* @media (width > 480px) and (width < 860px) {
 
 
-}
+} */
