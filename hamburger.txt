@@ -23,8 +23,8 @@ btnHamburger.addEventListener("click", () => {
 
 /* CSS */
 
-/* media queries som denna aktiveras endast om villkoret uppfylls - dvs om skärmen är mindre bred än 720px */
-@media (width < 720px) {   
+/* media queries som denna aktiveras endast om villkoret uppfylls - dvs om skärmen är mindre bred än 480px */
+@media (width < 480px) {   
     
     .primary-navigation {
         position: fixed;

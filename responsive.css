@@ -132,23 +132,20 @@ section {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px 0;
+    padding: 1rem 0;
     
 }
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
 
     padding-inline: 2rem;
-    margin: 0 auto;
 }
 
 .footer-navigation-bar,
 .footer-info,
 .footer-social {
     flex: 1;
-    margin-right: 20px;
 }
 
 .footer-navigation {
@@ -170,7 +167,7 @@ footer {
 .footer-bottom {
     display: flex;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 1rem;
 }
 
 
