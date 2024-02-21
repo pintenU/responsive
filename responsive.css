@@ -144,14 +144,14 @@ footer {
     margin: 0 auto;
 }
 
-.footer-navigation,
+.footer-navigation-bar,
 .footer-info,
 .footer-social {
     flex: 1;
     margin-right: 20px;
 }
 
-.secondary-navigation {
+.footer-navigation {
     display: flex; 
     flex-direction: column;
     gap: 0.5rem;
