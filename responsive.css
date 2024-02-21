@@ -277,19 +277,19 @@ img {
 
 @media (width < 480px) {
 
+    /* OBS: margins är en hjälpklass - se den användas med sections i HTML-filerna */
+
     .margins {
-        /* FIXME: ändra så det blir mindre marginaler med width här prova 90% ? */
+        /* FIXME: ändra så det blir mindre marginaler med width här */
+        width: 90%;
     }
-    
+
 }
 
 
 /* TABLET VIEW */
 
 @media (width > 480px) and (width < 860px) {
-    
-    .margins {
-        width: 80%;
-    }
+
 
 }
