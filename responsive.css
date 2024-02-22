@@ -219,7 +219,7 @@ footer ul {
     /* TODO: det går inte att ha tre kolumner i mobil. försök lösa problemet för både mobil och padda */
 
     column-gap: 3rem;
-    column-rule: 1px solid rgb(207, 207, 207);
+    column-rule: 1px solid rgb(191, 222, 198);
 }
 
 .columns > p {
