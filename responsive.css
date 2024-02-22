@@ -250,6 +250,7 @@ img {
 
 /* cards */ 
 
+/* TODO: se till att bilderna funkar i mobil-versionen - just nu är de för små? */
 .card-image-container {
     overflow: hidden;
     border-radius: 1rem;
