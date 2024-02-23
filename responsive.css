@@ -28,7 +28,6 @@ body {
 
 header {
     /* FIXME: header ska följa med när man skrollar ner  */
-    position: static;
 
     display: flex;
     justify-content: space-between;
