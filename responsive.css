@@ -143,8 +143,6 @@ footer {
 
 .footer-container {
     display: flex;
-
-    padding-inline: 2rem;
 }
 
 .footer-navigation-bar,
@@ -284,6 +282,11 @@ img {
 
     .margins {
         /* FIXME: ändra så det blir mindre marginaler med width här */
+        width: 90%;
+    }
+
+    .footer-container {
+        flex-direction: column;
     }
 
 }
