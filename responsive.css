@@ -8,9 +8,15 @@ för webbsidan.
 
 
 /* global styling */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;             /* se till att rutor beräknas med ev. padding och margin */
+}
+
 html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
+    /*TODO: gör så sidan scrollar mjukt när man klickar på interna länkar (bokmärkslänkar) */
 }
 
 body {
