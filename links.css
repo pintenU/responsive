@@ -31,12 +31,12 @@ länkar och knappar.
     
     text-align: center;
     
-    box-shadow: 0 3px 6px hsl(162, 95%, 7%);
+    box-shadow: 0 3px 6px hsl(162 95% 7% / 0.5);
     border-radius: 4px;
     
     padding-inline: 1.5rem;
     padding-block: 0.75rem;
-    overflow:hidden;
+    overflow: hidden;
     
     cursor: pointer;
     
