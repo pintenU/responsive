@@ -1,11 +1,12 @@
 
 :root {
-   --clr-cta: #12f1ab;
-   --clr-copy: hsl(0, 0%, 23%);
-   --clr-cta-active: #15b884;
+  --clr-copy: hsl(0, 0%, 23%);
+  --clr-cta: #0ee09e;
+  --clr-accent: #04ffb0;
+  --clr-active: #076245;
 }
 
-
+  
 /* link styling */
 
 .btn-cta {
@@ -14,19 +15,19 @@
    position: relative;
    display: inline-block;
 
-   outline: initial;
+   outline: initial;  
 
    font-family: inherit; 
    font-weight: 600;
    color: black;
-   background-color: var(--clr-cta-active);
+   background-color: var(--clr-cta);
 
    text-align: center;
 
    box-shadow: 0 3px 6px hsl(162 95% 7% / 0.5);
    border-radius: 4px;
 
-   padding-inline: 1.5rem;
+   padding-inline: 1.5rem;  
    padding-block: 0.75rem;
    overflow:hidden;
 
@@ -43,7 +44,7 @@
    content: '';
    position: absolute;
    opacity: 0;
-   background: var(--clr-cta);
+   background: var(--clr-accent);
    inset: 0;
    overflow: hidden;
    transform: translateY(-100%);
@@ -72,17 +73,18 @@
  .btn-cta:active {
    box-shadow: none;
    outline: none;
+   color: white;
  }
  
  .btn-cta:active::after {
-   filter: grayscale();
+   background: var(--clr-active);
  }
 
 
 .nav-link:link,
 .nav-link:visited {
-    color: black;
-    font-weight: 600;
+    color: var(--clr-copy);
+    font-weight: 500;
     
     text-underline-offset: 2em;
     text-decoration-color: transparent;
@@ -94,42 +96,46 @@
 
 .nav-link:hover,
 .nav-link:focus {
-    color: rgb(30, 190, 108);
+    color: var(--clr-cta);
 }
 
 .nav-link:hover,
 .nav-link.selected {
     text-decoration: underline;
     text-underline-offset: 0.5em;
-    text-decoration-color: rgb(102, 195, 144);
-    text-decoration-thickness: 0.17em;
+    text-decoration-color: var(--clr-cta);
+    text-decoration-thickness: 0.14em;
 } 
 
 .nav-link:active {
-   color: black;
-   text-decoration-color: black;
+   color: var(--clr-active);
+   text-decoration-color: var(--clr-active);
 
 }  
 
 .footer-link:link,
 .footer-link:visited {
-    color: rgb(102, 195, 144);
+    color: var(--clr-cta);
     text-underline-offset: 0.17em; 
-    text-decoration-color: rgb(84, 84, 84);
+    text-decoration-color: var(--clr-active);
 }
 
-.footer-link:hover,
-.footer-link:focus,
 .footer-link.selected  {
-    text-decoration-color: white;
+  text-decoration-color: white;
+}
+
+.footer-link:focus,
+.footer-link:hover {
+  color: var(--clr-accent);
+  text-decoration-color: var(--clr-cta);
 }
 
 .footer-link:hover {
-    color: var(--clr-cta);
+    color: var(--clr-accent);
 }
 
 .footer-link:active {
-    color: gray;
+    color: var(--clr-active);
 }
 
 

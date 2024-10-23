@@ -15,35 +15,34 @@
     <!-- TODO: ÖVERKURS: Klar med alla todos & fixes? Försök nu göra sidan 100 % accessibility och 100% best practices (Kolla i DevTools > Lighthouse) -->
 </head>
 <body>
-    <header>
+    <nav class="navigation-bar">
         <div class="flex-layout">
             <img class="main-logo" src="m2logo.svg" alt="logo">  <!-- FIXME: något fel på sökvägen-->
             <p><span class="upper">Responsive</span>&trade;</p>
         </div>
-        <nav class="navigation-bar">
-            <ul class="primary-navigation" id="primary-navigation">
-                <li><a class="nav-link selected" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="keywords.html">Keywords</a></li>
-                <li><a class="nav-link" href="products.html">Products</a></li>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
-                <li><a class="nav-link" href="about.html">About us</a></li>
-            </ul>
-           
-            <!-- TODO: implementera hamburger-knapp med funktionalitet (se hamburger.txt i filer) -->
-        </nav>
+    
+        <ul class="primary-navigation" id="primary-navigation">
+            <li><a class="nav-link selected" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="keywords.html">Keywords</a></li>
+            <li><a class="nav-link" href="products.html">Products</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+            <li><a class="nav-link" href="about.html">About us</a></li>
+        </ul>
+        
+        <!-- TODO: implementera hamburger-knapp med funktionalitet (se hamburger.txt i filer) -->
+    </nav>
+    <header class="main-header">
+        <div class="hero-layout">
+            <div>
+                <h1 class="main-title">A&nbsp;Responsive Future For All</h1>                    
+                <p class="lead">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsam?</p>
+
+                <!-- TODO: gör så knappen fungerar här nedan: -->
+                <a class="btn-cta" href="">Get Started</a>
+            </div>
+        </div>
     </header>
     <main>
-        <section class="main-content">
-            <div class="hero-layout">
-                <div>
-                    <h1 class="main-title">A&nbsp;Responsive Future For All</h1>                    
-                    <p class="lead">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsam?</p>
-
-                    <!-- TODO: gör så knappen fungerar här nedan: -->
-                    <a class="btn-cta" href="">Get Started</a>
-                </div>
-            </div>
-        </section>
         <!-- TODO: ÖVERKURS: bygg egna cards med rubrik och kanske nån effekt så texten syns bra? Glöm inte att de ska länkas till andra delar på sidan  -->
         <section class="card-container margins">
             <div class="card-layout">

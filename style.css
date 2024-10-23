@@ -27,12 +27,12 @@ body {
     
     min-height: 100vh;
     
-    font-size: 1em;
+    font-size: 1.125em;
     font-family: 'Segoe UI', sans-serif;
 }
 
-header {
-    /* FIXME: header ska följa med när man skrollar ner  */
+nav.navigation-bar {
+    /* FIXME: nav ska följa med när man skrollar ner */
 
     display: flex;
     justify-content: space-between;
@@ -47,7 +47,7 @@ header {
     z-index: 1;
 }
 
-.main-content {
+.main-header {
     position: relative;
 
     display: flex;
@@ -60,14 +60,16 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* FIXME: snea linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler (OBS! ta inte bort här för den ska finnas när man kör vanlig skärm) */
+    /* FIXME: clip-path används för sneda linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler 
+    
+    OBS! ta inte bort här för den ska finnas när man kör vanlig skärm */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     overflow: hidden;
 
     isolation: isolate;
 }
 
-.main-content::after {
+.main-header::after {
     content: '';
     
     position: absolute;
@@ -112,7 +114,9 @@ header {
 .green-bg {
     background:  rgb(220, 255, 228);
 
-    /* FIXME: snea linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en media-query eller om du vill ta bort effekten helt på mobiler (OBS! ta inte bort här för den ska finnas när man kör vanlig skärm) */
+    /* FIXME: clip-path används för sneda linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler 
+    
+    OBS! ta inte bort här för den ska finnas när man kör vanlig skärm */
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
 }
 
@@ -167,7 +171,7 @@ footer {
 .footer-bottom {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
 
@@ -185,24 +189,11 @@ h3 {
     margin-bottom: 0.5rem;
 }
 
-.footer-title {
-    color: #fff;
-    margin-top: 0.6rem;
-}
-
-footer ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-}
-
-.footer-text {
-    color: #e2e2e2;
-}
-
 .lead {
     font-weight: 600;
+    font-size: 1.5rem;
     line-height: 1.5;
+
 }
 
 .main-title {
@@ -231,6 +222,21 @@ footer ul {
 
 .columns p {
     margin-top: 0;
+}
+
+.footer-title {
+    color: #fff;
+    margin-top: 0.6rem;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-text {
+    color: #e2e2e2;
 }
 
 
