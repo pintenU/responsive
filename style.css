@@ -1,5 +1,5 @@
 
-/* STYLE.CSS ***************************************
+/* STYLE.CSS ********************************************
 
 Detta CSS-dokument innehåller alla generella egenskaper
 för webbsidan.
@@ -23,12 +23,11 @@ body {
     margin: 0;
     padding: 0;
     
-    font-size: 1.125em;
-    
     background-color: hsl(0, 0%, 96%);
-
+    
     min-height: 100vh;
-
+    
+    font-size: 1em;
     font-family: 'Segoe UI', sans-serif;
 }
 
@@ -54,7 +53,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;  /* FIXME: ÖVERKURS: något problem här när man kör laptop med 150% zoom - vilken liknande egenskap är bättre här eftersom height är problematiskt? */
+    height: 70vh;
     
     background-image: url('img/responsive-bg2.webp');
     background-position: center;
@@ -82,7 +81,7 @@ header {
 }
 
 .hero-layout {
-    width: 60%;
+    width: 70%;
     margin-inline: auto;
     display: grid;
 
@@ -126,7 +125,7 @@ section {
 }
 
 .margins {
-    width: 60%;
+    width: 70%;
     margin-inline: auto;
 }
 
@@ -178,7 +177,7 @@ p {
     color:#333;
 }
 
-h2 {
+h1, h2 {
     color: black;
 }
 

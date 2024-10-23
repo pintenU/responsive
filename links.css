@@ -1,12 +1,4 @@
 
-/* LINKS.CSS ***************************************
-
-Detta CSS-dokument innehåller alla egenskaper för
-länkar och knappar.
-
-****************************************************/
-
-
 :root {
    --clr-cta: #12f1ab;
    --clr-copy: hsl(0, 0%, 23%);
@@ -17,79 +9,77 @@ länkar och knappar.
 /* link styling */
 
 .btn-cta {
-    all: unset;
+   all: unset;
 
-    position: relative;
-    display: inline-block;
+   position: relative;
+   display: inline-block;
 
-    outline: initial;
-    
-    font-family: inherit; 
-    font-weight: 600;
-    color: black;
-    background-color: var(--clr-cta-active);
-    
-    text-align: center;
-    
-    box-shadow: 0 3px 6px hsl(162 95% 7% / 0.5);
-    border-radius: 4px;
-    
-    padding-inline: 1.5rem;
-    padding-block: 0.75rem;
-    overflow: hidden;
-    
-    cursor: pointer;
-    
-    transition: color 250ms ease-in-out,
-    box-shadow 100ms;
-    
-    isolation: isolate;
+   outline: initial;
+
+   font-family: inherit; 
+   font-weight: 600;
+   color: black;
+   background-color: var(--clr-cta-active);
+
+   text-align: center;
+
+   box-shadow: 0 3px 6px hsl(162 95% 7% / 0.5);
+   border-radius: 4px;
+
+   padding-inline: 1.5rem;
+   padding-block: 0.75rem;
+   overflow:hidden;
+
+   cursor: pointer;
+
+   transition: color 250ms ease-in-out,
+   box-shadow 100ms;
+
+   isolation: isolate;
  }
  
  
  .btn-cta::after {
-    content: '';
-    position: absolute;
-    opacity: 0;
-    background: var(--clr-cta);
-    inset: 0;
-    overflow: hidden;
-    transform: translateY(-100%);
-    
-    transition: transform 200ms ease-in-out,
-                opacity 150ms ease-in-out;
-    z-index: -1;
+   content: '';
+   position: absolute;
+   opacity: 0;
+   background: var(--clr-cta);
+   inset: 0;
+   overflow: hidden;
+   transform: translateY(-100%);
+   
+   transition: transform 200ms ease-in-out,
+               opacity 150ms ease-in-out;
+   z-index: -1;
  }
  
  .btn-cta:focus::after,
  .btn-cta:hover::after {
-    opacity: 1;
-    transform: translateY(0%);
+   opacity: 1;
+   transform: translateY(0%);
  
  }
 
  .btn-cta:hover,
  .btn-cta:focus {
-    color: var(--clr-copy);
+   color: var(--clr-copy);
  } 
  
  .btn-cta:focus {
-    outline: 1px solid white;
+   outline: 1px solid white;
  }
  
  .btn-cta:active {
-    box-shadow: none;
-    outline: none;
+   box-shadow: none;
+   outline: none;
  }
  
  .btn-cta:active::after {
-    filter: grayscale();
+   filter: grayscale();
  }
 
 
-/* TODO: ÖVERKURS: gör en egen animation/effekt för nav-link */
-
-.nav-link,
+.nav-link:link,
 .nav-link:visited {
     color: black;
     font-weight: 600;
@@ -118,23 +108,24 @@ länkar och knappar.
 .nav-link:active {
    color: black;
    text-decoration-color: black;
+
 }  
 
-
-.footer-link,
+.footer-link:link,
 .footer-link:visited {
-    color: rgb(179, 179, 179);
+    color: rgb(102, 195, 144);
     text-underline-offset: 0.17em; 
     text-decoration-color: rgb(84, 84, 84);
 }
 
 .footer-link:hover,
+.footer-link:focus,
 .footer-link.selected  {
     text-decoration-color: white;
 }
 
 .footer-link:hover {
-    color: white;
+    color: var(--clr-cta);
 }
 
 .footer-link:active {
@@ -146,6 +137,15 @@ länkar och knappar.
 
 .hamburger-button {
    all: unset;
-   display: grid;
+   display: none;
    place-items: center;
-} 
+}
+
+
+@media (width < 480px) {
+   
+   .hamburger-button {
+      
+      display: grid;
+   }
+}
