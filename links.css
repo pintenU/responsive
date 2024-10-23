@@ -33,9 +33,8 @@
 
    cursor: pointer;
 
-   transition: color 250ms ease-in-out,
-   box-shadow 100ms;
-
+   transition:  color 125ms ease-in-out;
+   
    isolation: isolate;
  }
  
@@ -86,12 +85,11 @@
     color: var(--clr-copy);
     font-weight: 500;
     
-    text-underline-offset: 2em;
+    text-underline-offset: 1.5em;
     text-decoration-color: transparent;
     transition: text-decoration-color 250ms ease-in-out,
                 text-underline-offset 250ms ease-in-out,
-                color 250ms ease-in-out;
-    
+                color 150ms ease-in-out;
 }
 
 .nav-link:hover,
