@@ -226,7 +226,9 @@ h3 {
 
 .footer-title {
     color: #fff;
-    margin-top: 0.6rem;
+    margin-top: 1rem;
+    font-size: 1.35rem;
+    font-weight: 700;
 }
 
 footer ul {
