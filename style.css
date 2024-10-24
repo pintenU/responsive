@@ -33,14 +33,14 @@ body {
 
 nav.navigation-bar {
     /* FIXME: nav ska följa med när man skrollar ner */
-    
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     
     padding: 0.2rem 1rem;
         
-    background: hsl(0, 0%, 99%);
+    background: #fff;
 
     box-shadow: 0 3px 6px rgb(178, 178, 178);
 
