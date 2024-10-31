@@ -23,10 +23,11 @@ body {
     margin: 0;
     padding: 0;
     
-    background-color: hsl(0, 0%, 96%);
+    background-color: #fafafa;
     
     min-height: 100vh;
     
+    color:#3a3a3a;
     font-size: 1.125em;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -40,7 +41,7 @@ nav.navigation-bar {
     
     padding: 0.2rem 1rem;
         
-    background: #fff;
+    background-color: #fff;
 
     box-shadow: 0 3px 6px rgb(178, 178, 178);
 
@@ -60,7 +61,7 @@ nav.navigation-bar {
     background-size: cover;
     background-repeat: no-repeat;
 
-    /* FIXME: clip-path används för sneda linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler 
+    /* FIXME: clip-path används för sneda linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler/paddor.
     
     OBS! ta inte bort här för den ska finnas när man kör vanlig skärm */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
@@ -112,9 +113,9 @@ nav.navigation-bar {
 }
 
 .green-bg {
-    background:  rgb(220, 255, 228);
+    background: #dcffe4;
 
-    /* FIXME: clip-path används för sneda linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler 
+    /* FIXME: clip-path används för sneda linjer / diagonala linjer: välj om du vill fixa clip-path så det passar för mobil i en "media query" eller om du vill ta bort effekten helt på mobiler/paddor. 
     
     OBS! ta inte bort här för den ska finnas när man kör vanlig skärm */
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
@@ -178,7 +179,7 @@ footer {
 /* text styling */
 
 p {
-    color:#333;
+    color:#3a3a3a;
 }
 
 h1, h2 {
@@ -238,7 +239,12 @@ footer ul {
 }
 
 .footer-text {
-    color: #e2e2e2;
+    color: #d2d2d2;
+}
+
+.small {
+    font-size: 0.85rem;
+    color: #d6d6d6;
 }
 
 

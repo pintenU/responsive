@@ -72,7 +72,7 @@
  .btn-cta:active {
    box-shadow: none;
    outline: none;
-   color: white;
+   color: black;
  }
  
  .btn-cta:active::after {
