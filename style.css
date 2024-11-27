@@ -157,6 +157,8 @@ footer {
     display: flex; 
     flex-direction: column;
     gap: 0.5rem;
+
+    margin-top: 1rem;
 }
 
 .footer-social {
@@ -227,7 +229,8 @@ h3 {
 
 .footer-title {
     color: #fff;
-    margin-top: 1rem;
+    margin-block: 0rem;
+    padding-block: 0rem 1rem;
     font-size: 1.35rem;
     font-weight: 700;
 }
