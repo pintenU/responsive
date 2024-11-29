@@ -6,8 +6,7 @@
 
     <title>Responsive&trade;</title>
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="links.css">
+    <link rel="stylesheet" href="assets/style.css">
 
     <!-- TODO: BÖRJA HÄR! med att ladda ner Todo Tree. Gå till Extensions > sök Todo Tree (se panelen till vänster). Härnäst tycker jag du ska bekanta dig med HTML-koden och CSS-koden så du vet vad du har att jobba med -->
 
@@ -23,10 +22,10 @@
         </div>
     
         <ul class="primary-navigation" id="primary-navigation">
-            <li><a class="nav-link selected" href="index.html">Home</a></li>
-            <li><a class="nav-link" href="products.html">Products</a></li>
-            <li><a class="nav-link" href="contact.html">Contact</a></li>
-            <li><a class="nav-link" href="about.html">About us</a></li>
+            <li><a class="nav-link selected" href="#">Home</a></li>
+            <li><a class="nav-link" href="/products">Products</a></li>
+            <li><a class="nav-link" href="/about">About us</a></li>
+            <li><a class="nav-link" href="/contact">Contact</a></li>
         </ul>
         
         <!-- TODO: implementera hamburger-knapp med funktionalitet (se hamburger.txt i filer) -->
@@ -47,10 +46,10 @@
         <section class="card-container margins">
             <h2>Products</h2>
             <div class="card-layout">
-                <div class="card-image-container"><img class="card-image" src="img/girl_coder.webp"></div>
-                <div class="card-image-container"><img class="card-image" src="img/dom.webp"></div>
-                <div class="card-image-container"><img class="card-image" src="img/ethics.webp"></div>
-                <div class="card-image-container"><img class="card-image" src="img/jump_1080p.webp"></div>
+                <button class="card"><img class="card-image" src="img/girl_coder.webp"></button>
+                <button class="card"><img class="card-image" src="img/dom.webp"></button>
+                <button class="card"><img class="card-image" src="img/ethics.webp"></button>
+                <button class="card"><img class="card-image" src="img/jump_1080p.webp"></button>
             </div>
         </section>
         <section class="green-bg">
@@ -79,7 +78,7 @@
             <div class="footer-info">
                 <div class="flex-layout">
                     <img class="main-logo" src="m2logo.svg" alt="logo">
-                    <span class="upper reversed">Responsive&trade;</span>
+                    <span class="upper color-reversed">Responsive&trade;</span>
                 </div>
             </div>
             <nav class="footer-navigation-bar">
@@ -108,7 +107,7 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="footer-text small">&copy; 2024 Responsive&trade;. Some rights reserved. | <a class="footer-link" href="privacy.html">Privacy Policy</a> | <a class="footer-link" href="terms.html">Terms of Service</a></p>
+            <p class="footer-text small">&copy; 2024 Responsive&trade;. Some rights reserved. | <a class="footer-link" href="privacy">Privacy Policy</a> | <a class="footer-link" href="terms">Terms of Service</a></p>
         </div>
     </footer>    
 </body>
