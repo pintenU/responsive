@@ -244,6 +244,12 @@ h3 {
     font-weight: 700;
 }
 
+@media (width < 480px) {
+    .footer-title {
+        margin-block: 1.5rem 0rem;
+    }
+}
+
 footer ul {
     list-style-type: none;
     padding: 0;
