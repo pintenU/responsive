@@ -12,7 +12,7 @@ för webbsidan.
     --clr-copy: hsl(0, 0%, 23%);
     --clr-cta: #0ee09e;
     --clr-accent: #04ffb0;
-    --clr-active: #076245;
+    --clr-active: #138f68;
 }
 
 *,
@@ -399,7 +399,7 @@ img {
 .btn-cta:active {
     box-shadow: none;
     outline: none;
-    color: black;
+    color: white;
 }
 
 .btn-cta:active::after {
