@@ -421,10 +421,12 @@ img {
     font-weight: 500;
 
     text-underline-offset: 1.5em;
+    text-decoration-thickness: 0;
+
     text-decoration-color: transparent;
     transition: text-decoration-color 250ms ease-in-out,
-        text-underline-offset 250ms ease-in-out,
-        color 150ms ease-in-out;
+                text-underline-offset 250ms ease-in-out,
+                color 150ms ease-in-out;
 }
 
 .nav-link:hover,
@@ -432,11 +434,16 @@ img {
     color: var(--clr-cta);
 }
 
-.nav-link:hover,
-.nav-link.selected {
+.nav-link:hover {
     text-decoration: underline;
     text-underline-offset: 0.5em;
     text-decoration-color: var(--clr-cta);
+    text-decoration-thickness: 0.14em;
+}
+
+.nav-link.selected {
+    text-decoration-color: var(--clr-active);
+    text-underline-offset: 0.5em;
     text-decoration-thickness: 0.14em;
 }
 
@@ -449,7 +456,7 @@ img {
 .footer-link:link,
 .footer-link:visited {
     color: var(--clr-cta);
-    text-underline-offset: 0.17em;
+    text-underline-offset: 0.26em;
     text-decoration-color: var(--clr-active);
 }
 
