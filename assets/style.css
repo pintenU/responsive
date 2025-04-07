@@ -88,7 +88,7 @@ nav.navigation-bar {
 
     z-index: -1;
 
-    background: linear-gradient(to bottom, hsl(255 100% 100% / 0.2) 80%, hsl(0, 0%, 96%));
+    background: linear-gradient(to bottom, hsl(255 100% 100% / 0.2) 70%, #fafafa);
 }
 
 .hero-layout {
@@ -294,7 +294,7 @@ img {
 }
 
 
-/* cards */
+/* cards styling */
 
 /* TODO: se till att bilderna funkar i mobil-versionen */
 .card {
@@ -342,7 +342,7 @@ img {
 
 /* link styling */
 
-.btn-cta {
+.btn-primary {
     all: unset;
 
     position: relative;
@@ -352,7 +352,7 @@ img {
 
     font-family: inherit;
     font-weight: 600;
-    color: black;
+    color: white;
     background-color: var(--clr-cta);
 
     text-align: center;
@@ -372,7 +372,7 @@ img {
 }
 
 
-.btn-cta::after {
+.btn-primary::after {
     content: '';
     position: absolute;
     opacity: 0;
@@ -386,29 +386,31 @@ img {
     z-index: -1;
 }
 
-.btn-cta:focus::after,
-.btn-cta:hover::after {
+.btn-primary:focus::after,
+.btn-primary:hover::after {
     opacity: 1;
     transform: translateY(0%);
 
 }
 
-.btn-cta:hover,
-.btn-cta:focus {
+/* när man hovrar över btn-primary */
+/* 
+.btn-primary:hover,
+.btn-primary:focus {
     color: var(--clr-copy);
-}
+} */
 
-.btn-cta:focus {
+.btn-primary:focus {
     outline: 1px solid white;
 }
 
-.btn-cta:active {
+.btn-primary:active {
     box-shadow: none;
     outline: none;
     color: white;
 }
 
-.btn-cta:active::after {
+.btn-primary:active::after {
     background: var(--clr-active);
 }
 
