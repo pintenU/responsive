@@ -18,8 +18,7 @@ för webbsidan.
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
-    /* se till att rutor beräknas med ev. padding och margin */
+    box-sizing: border-box;     /* se till att rutor beräknas med ev. padding och margin */
 }
 
 html {
@@ -35,6 +34,7 @@ body {
     min-height: 100vh;
 
     color: #3a3a3a;
+
     font-size: 1em;
     font-family: 'Segoe UI', sans-serif;
 }
@@ -77,6 +77,7 @@ nav.navigation-bar {
     isolation: isolate;
 }
 
+/* skapa övergång i bakgrunden i hero */
 .main-header::after {
     content: '';
 
@@ -133,9 +134,10 @@ section:not(:first-child) {
 }
 
 section {
-    padding-block: 3rem;
+    padding-block: 4rem;
 }
 
+/* marginaler för sektioner */
 .margins {
     width: 70%;
     margin-inline: auto;
@@ -147,7 +149,7 @@ section {
 footer {
     background-color: #333;
     color: #fff;
-    padding-block: 2rem 2rem;
+    padding-block: 4rem 4rem;
 }
 
 .footer-container {
@@ -270,8 +272,10 @@ footer ul {
 
 img {
     display: block;
-    max-width: 100%;
+    
+    max-width: 100%;    /* se till att bilden ej kan bli större än sin närmaste parent behållare */
     object-fit: cover;
+
     border-radius: 1rem;
 
     font-style: italic;
@@ -279,12 +283,14 @@ img {
 }
 
 .main-logo {
-    width: 24px;
+    width: 2rem;  /* 32px (1rem = 16px) */
+    aspect-ratio: 1;
 }
 
 .logo {
-    width: 32px;
-    height: 32px;
+    width: 2rem; 
+    height: 2rem;
+    aspect-ratio: 1;
 }
 
 
@@ -475,14 +481,14 @@ img {
 
 @media (width < 480px) {
 
+    /* om mobilvy visa hamburgerknappen */
     .hamburger-button {
-
         display: grid;
     }
 }
 
 
-/* detta är för att se till att element som måste finnas för tillgänglighet inte syns */
+/* detta är för att se till att element som måste finnas för tillgänglighet inte syns - tex. rubriker */
 .visually-hidden {
     position: absolute;
     width: 1px;
