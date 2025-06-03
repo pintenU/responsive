@@ -22,10 +22,15 @@ för webbsidan.
 }
 
 html {
-    /*TODO: gör så sidan scrollar mjukt när man klickar på interna länkar (bokmärkslänkar) */
+    scroll-behavior: smooth;
+
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+
+
     margin: 0;
     padding: 0;
 
@@ -52,7 +57,9 @@ nav.navigation-bar {
 
     box-shadow: 0 3px 6px rgb(178, 178, 178);
 
-    z-index: 1;
+    position: sticky;
+    top: 0; 
+    z-index: 100;
 }
 
 .main-header {
@@ -63,7 +70,7 @@ nav.navigation-bar {
     align-items: center;
     height: 80vh;
 
-    background-image: url('/img/responsive-bg2.webp');
+    background-image: url('../img/responsive-bg2.webp');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -72,7 +79,7 @@ nav.navigation-bar {
     
     OBS! ta inte bort här för den ska finnas när man kör vanlig skärm: */
     clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    overflow: hidden;
+    overflow: scroll;
 
     isolation: isolate;
 }
@@ -147,6 +154,8 @@ section {
 /* footer styling */
 
 footer {
+    margin-top: auto;
+    
     background-color: #333;
     color: #fff;
     padding-block: 4rem 4rem;
@@ -326,6 +335,7 @@ img {
 
     .margins {
         /* FIXME: ändra så det blir mindre marginaler med width här */
+        width: 90%;
     }
 
 }
@@ -394,11 +404,11 @@ img {
 }
 
 /* när man hovrar över btn-primary */
-/* 
+
 .btn-primary:hover,
 .btn-primary:focus {
     color: var(--clr-copy);
-} */
+} 
 
 .btn-primary:focus {
     outline: 1px solid white;
@@ -490,9 +500,138 @@ img {
 
 @media (width < 480px) {
 
+    
+
     /* om mobilvy visa hamburgerknappen */
     .hamburger-button {
         display: grid;
+    } 
+/*     
+        .primary-navigation {
+            position: fixed;
+            top: 0;
+            inset: 0;
+    
+            display: flex;
+            justify-content: start;
+            align-items: end;
+            flex-direction: column;
+            
+            padding: 4rem 2rem;
+            
+            background: darkgray;
+            opacity: 0;
+    
+            transform: translateX(100%);
+            transition: transform 250ms ease-in-out,
+                        opacity 250ms ease-in-out;
+        } */
+
+        .primary-navigation {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            display: none;
+            opacity: 0;
+        }
+
+
+        .primary-navigation.open {
+        transform: translateX(0);
+        transition: transform 250ms ease-in-out,
+                    opacity 250ms ease-in-out;
+        opacity: 1;
+
+        display: flex;
+        justify-content: start;
+        align-items: end;
+        flex-direction: column;
+
+        padding: 4rem 2rem;
+
+        background-color: darkgray;
+        padding: 1rem;
+        border-radius: 25px;
+
+
+    }
+
+
+    .main-header {
+        position: relative;
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 80vh;
+    
+        background-image: url('../img/responsive-bg2.webp');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+        clip-path: none;
+        overflow: scroll;
+    
+        isolation: isolate;
+    }
+    
+    .main-title {
+        margin-block: 1rem 0.5rem;
+        font-size: 2rem;
+        line-height: 1;
+        white-space: pre-wrap;
+    }
+
+    .lead {
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 1.5;
+        color: #505050;
+        border-radius: 10px;
+        background-color: #fafafa8c;
+    }
+
+    .green-bg {
+        background: #dcffe4;
+    
+        clip-path: none;
+    }
+
+    .columns {
+        columns: 1;
+        column-gap: 3rem;
+    }
+
+    .card-layout {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
+    }
+    
+    .card {
+        all: unset;
+        overflow: hidden; 
+        border-radius: 1rem;
+        max-width: 100%;
+        margin-bottom: 10px; 
+        transition: none;
+    }
+    
+    .card-image {
+
+        object-fit: cover;
+        max-width: 100%;
+    }
+
+    .card-layout:hover {
+        opacity: 1;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column; 
+        align-items: center; 
     }
 }
 

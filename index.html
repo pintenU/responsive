@@ -18,15 +18,32 @@
     <nav class="navigation-bar">
         <div class="flex-layout">
             <img class="main-logo" src="img/m2logo.svg" alt="logo">  <!-- FIXME: något fel på sökvägen-->
-            <span class="upper">Responsive&trade;</span>
+            <span class="upper color-reversed">Responsive&trade;</span>
         </div>
     
         <ul class="primary-navigation" id="primary-navigation">
             <li><a class="nav-link selected" href="#">Home</a></li>
-            <li><a class="nav-link" href="/products">Products</a></li>
+            <li><a class="nav-link" href="/responsive/products/index.html">Products</a></li>
             <li><a class="nav-link" href="/about">About us</a></li>
             <li><a class="nav-link" href="/contact">Contact</a></li>
         </ul>
+
+        <button class="hamburger-button" id="hamburger-button" aria-label="hamburger-button" aria-expanded="false">
+            <svg fill="black" class="icon-hamburger" viewbox="0 0 100 100" width="32">
+                <rect class="line top" width="90" height="3" x="5" y="30" rx="2"></rect>
+                <rect class="line middle" width="90" height="3" x="5" y="50" rx="2"></rect>
+                <rect class="line bottom" width="90" height="3" x="5" y="70" rx="2"></rect>    
+            </svg>
+            
+        <div class="primary-navigation-inner">
+            <ul class="primary-navigation" id="primary-navigation">
+                <li><a class="nav-link selected" href="#">Home</a></li>
+                <li><a class="nav-link" href="/responsive/products/index.html">Products</a></li>
+                <li><a class="nav-link" href="/about">About us</a></li>
+                <li><a class="nav-link" href="/contact">Contact</a></li>
+            </ul>
+        </div>
+        </button>
         
         <!-- TODO: implementera hamburger-knapp med funktionalitet (se hamburger.txt i filer) -->
     </nav>
@@ -38,7 +55,7 @@
                 <p class="lead">Lorem ipsum Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, ipsam?</p>
 
                 <!-- TODO: gör så knappen fungerar här nedan: -->
-                <a class="btn-primary" href="">Get Started</a>
+                <a class="btn-primary" href="products/index.html">Get Started</a>
             </div>
         </div>
     </header>
@@ -78,7 +95,7 @@
         <div class="footer-container margins">
             <div class="footer-info">
                 <div class="flex-layout">
-                    <img class="main-logo" src="m2logo.svg" alt="logo">
+                    <img class="main-logo" src="../responsive/img/m2logo.svg" alt="logo">
                     <span class="upper color-reversed">Responsive&trade;</span>
                 </div>
             </div>
@@ -101,15 +118,16 @@
                 <span class="footer-title">Follow Us</span>
             
                 <ul class="social-links flex-layout">
-                    <li><a class="footer-link" href="#" target="_blank"><img class="logo" src="/img/social/Facebook_Logo_(2019).png.webp" alt="Facebook"></a></li>
-                    <li><a class="footer-link" href="#" target="_blank"><img class="logo" src="/img/social/x.png" alt="Twitter"></a></li>
-                    <li><a class="footer-link" href="#" target="_blank"><img class="logo" src="/img/social/linked.png" alt="LinkedIn"></a></li>
+                    <li><a class="footer-link" href="#" target="_blank"><img class="logo" src="../responsive/img/social/Facebook_Logo_(2019).png.webp" alt="Facebook"></a></li>
+                    <li><a class="footer-link" href="#" target="_blank"><img class="logo" src="../responsive/img/social/x.png" alt="X"></a></li>
+                    <li><a class="footer-link" href="#" target="_blank"><img class="logo" src="../responsive/img/social/linked.png" alt="LinkedIn"></a></li>
                 </ul>
             </div>
         </div>
         <div class="footer-bottom margins">
             <p class="footer-text small">&copy; 2024 Responsive&trade;. Some rights reserved. | <a class="footer-link" href="privacy">Privacy Policy</a> | <a class="footer-link" href="terms">Terms of Service</a></p>
         </div>
-    </footer>    
+    </footer>
+    <script src="../responsive/assets/hamburger.js"></script>
 </body>
 </html>
