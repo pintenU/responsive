@@ -506,26 +506,6 @@ img {
     .hamburger-button {
         display: grid;
     } 
-/*     
-        .primary-navigation {
-            position: fixed;
-            top: 0;
-            inset: 0;
-    
-            display: flex;
-            justify-content: start;
-            align-items: end;
-            flex-direction: column;
-            
-            padding: 4rem 2rem;
-            
-            background: darkgray;
-            opacity: 0;
-    
-            transform: translateX(100%);
-            transition: transform 250ms ease-in-out,
-                        opacity 250ms ease-in-out;
-        } */
 
         .primary-navigation {
             position: absolute;
